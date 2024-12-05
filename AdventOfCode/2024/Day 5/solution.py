@@ -35,6 +35,7 @@ def reorderPages(pages, rules):
     return pages
 
 def part_1(input_lines) -> int:
+    # answer = 4609
     middle_total = 0
     rules = {}
     reading_rules = True
@@ -61,6 +62,7 @@ def part_1(input_lines) -> int:
     return middle_total
 
 def part_2(input_lines) -> int:
+    # answer = 5723
     middle_total = 0
     rules = {}
     reading_rules = True
