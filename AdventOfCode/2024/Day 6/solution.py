@@ -369,6 +369,8 @@ def part_2(input_lines) -> int:
         while temp_area.placeTempBlocker(temp_blocker_position) == False:
             the_temp_path.advance()
             temp_blocker_position = the_temp_path.getNextPosition()
+            if the_temp_path.inOrOut == AreaState.OUT_OF_AREA:
+                break
         # using the valid temp blocker, bop til you drop
         logging.debug(f"in temp area, starting at {the_temp_path.getPosition()}, blocker at {temp_blocker_position}")
         steps += 1
@@ -407,4 +409,4 @@ if __name__ == "__main__":
     print(f'part 1 answer: {answer_1}')
 
     answer_2 = part_2(lines)
-    print(f'part 2 answer: {answer_2}')
+    print(f'\npart 2 answer: {answer_2}')
