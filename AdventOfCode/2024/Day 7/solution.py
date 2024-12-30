@@ -3,7 +3,6 @@
 #----------------------------------------------------------
 from pathlib import Path
 import logging
-from bitarray import bitarray
 
 
 def convertToBase(number, base, width=1):
