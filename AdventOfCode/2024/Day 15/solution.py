@@ -298,7 +298,7 @@ def part_1(input_lines) -> int:
 
 
 def part_2(input_lines) -> int:
-    # test answer = 9021, answer = xxxx
+    # test answer = 9021, answer = 1429013
     warehouse2 = Warehouse2(input_lines[:input_lines.index('')])
     logging.debug('----- Initial State Part 2')
     logging.debug('\n' + warehouse2.dump() + '\n')
