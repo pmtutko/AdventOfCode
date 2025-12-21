@@ -55,7 +55,7 @@ def part_1(paper_map) -> int:
     return count_moveable_rolls_and_update(paper_map)
 
 def part_2(paper_map) -> int:
-    """ AoC Part 2 Solution: test answer = 43, answer = xxxx  """
+    """ AoC Part 2 Solution: test answer = 43, answer = 9182  """
     total_moveable_rolls = 0
     moveable_rolls = count_moveable_rolls_and_update(paper_map)
     while moveable_rolls > 0:
