@@ -8,6 +8,7 @@
             "name": "Python Debugger: Current AoC Day Folder",
             "type": "debugpy",
             "request": "launch",
+            "cwd": "${workspaceFolder}",
             "program": "${workspaceFolder}/solution.py",
             "console": "integratedTerminal"
         }
